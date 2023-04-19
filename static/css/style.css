@@ -44,5 +44,5 @@ p {
 }
 
 hr {
-	border: 1px solid rgba(30,50,131,50);
+	border: 1px solid rgba(30,50,131,0.3);
 }
