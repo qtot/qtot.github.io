@@ -23,9 +23,9 @@
 	background-color: rgb(30,50,131); 
 	font-size: 20px;
 	font-variant: small-caps;
-	font-family: Inter, "Optima", sans-serif, "Helvetica Neue";
+	font-family: "Optima", sans-serif;
 	font-weight: bold;
-	letter-spacing: 0.1em;
+	letter-spacing: 2px;
 }
 
 article {
