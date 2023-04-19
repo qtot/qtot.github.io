@@ -1,0 +1,48 @@
+.title {
+	font-size: 50px;
+	color: #ffffff;
+	padding: 0;
+}
+
+.subtitle {
+	font-size: 30px;
+	color: #ffffff;
+	padding: 0;
+}
+
+.jumbotron {
+	background-image: url(/img/jumbotron.jpg);
+	background-size: cover;
+	height: 100%;
+	margin-bottom: 0;
+	border-radius: 0px;
+	padding: 2rem 2rem;
+}
+
+.navbar {
+	background-color: rgb(30,50,131); 
+	font-size: 20px;
+	font-variant: small-caps;
+	font-family: Inter, "Optima", sans-serif, "Helvetica Neue";
+	font-weight: bold;
+	letter-spacing: 0.1em;
+}
+
+article {
+	max-width: 1200px;
+	margin: auto;
+	font-family: "Georgia";
+}
+
+article * {
+	scroll-margin-top: 80px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+hr {
+	border: 1px solid rgba(30,50,131,50);
+}

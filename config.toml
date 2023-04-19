@@ -1,0 +1,27 @@
+baseURL = 'http://qtot.github.io/'
+languageCode = 'en-us'
+title = 'Quantum Theory and Operator Theory'
+[params]
+  subtitle = 'Satellite Conference of the International Congress of Basic Science'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Attending"
+    pre = "compass"
+    url = "/attending/"
+    weight = 2
+  [[menu.main]]
+    name = "Program"
+    pre = "calendar"
+    url = "/program/"
+    weight = 3
+  [[menu.main]]
+    name = "Contact"
+    pre = "mail"
+    url = "/contact/"
+    weight = 4
