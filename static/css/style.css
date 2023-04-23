@@ -1,48 +1,30 @@
 .title {
-	font-size: 50px;
-	color: #ffffff;
-	padding: 0;
+	font-family: "Arial Black";
+	font-size: 35px;
 }
 
 .subtitle {
-	font-size: 30px;
-	color: #ffffff;
-	padding: 0;
+	font-family: "Arial";	
+	font-size: 25px;
 }
 
 .jumbotron {
-	background-image: url(/img/jumbotron.jpg);
-	background-size: cover;
-	height: 100%;
-	margin-bottom: 0;
-	border-radius: 0px;
-	padding: 2rem 2rem;
+/*	background-image: url(/img/jumbotron.jpg);*/
+/*	background-size: cover;*/
+/*	height: 100%;*/
+/*	border-radius: 0px;*/
 }
 
-.navbar {
-	background-color: rgb(30,50,131); 
+.nav-link {
+	font-family: "Arial";
 	font-size: 20px;
-	font-variant: small-caps;
-	font-family: "Optima", sans-serif;
-	font-weight: bold;
-	letter-spacing: 2px;
 }
 
 article {
-	max-width: 1200px;
-	margin: auto;
-	font-family: "Georgia";
+	font-family: "Arial";
 }
 
-article * {
-	scroll-margin-top: 80px;
-}
-
-p {
+article p {
     text-align: justify;
     text-justify: inter-word;
-}
-
-hr {
-	border: 1px solid rgba(30,50,131,0.3);
 }

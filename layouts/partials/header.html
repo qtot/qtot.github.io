@@ -1,21 +1,28 @@
-<div id="home-jumbotron" class="jumbotron text-center">
-    <h1 class="title">{{ .Site.Title }}</h1>
-    <h1 class="subtitle">{{ .Site.Params.subtitle }}</h1>
+<div id="home-jumbotron" class="jumbotron text-center bg-light p-5">
+    <h1 class="title text-dark p-0">{{ .Site.Title }}</h1>
+    <h1 class="subtitle text-dark p-0">{{ .Site.Params.subtitle }}</h1>
 </div>
-<header class="navbar sticky-top navbar-expand-md navbar-dark">
-    <ul class="navbar-nav m-auto">
-        {{ range .Site.Menus.main }}
-        <li class="nav-item">
-            <a class="nav-link active" href="{{ .URL }}">
-            {{ if .Pre }}
-            {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
-            {{ $icon }}
-            {{ end }}
-            {{ $text := print .Name | safeHTML }}
-            {{ $text }}
-            </a>
-        </li>
-        {{ end }}
 
-    </ul>
-</header>
+<nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid px-5">
+    <!-- <a class="navbar-brand" href="#">QTOT</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-5" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto me-auto nav-fill w-100">
+        {{ range .Site.Menus.main }}
+                <a class="nav-link" href="{{ .URL }}">
+                {{ if .Pre }}
+                {{ $icon := printf "<i data-feather=\"%s\"></i> " .Pre | safeHTML }}
+                {{ $icon }}
+                {{ end }}
+                {{ $text := print .Name | safeHTML }}
+                {{ $text }}
+                </a>
+        {{ end }}
+      </div>
+    </div>
+    <!-- <span class="navbar-text">QTOT</span> -->
+  </div>
+</nav>
